@@ -38,4 +38,9 @@ Contains Python library code with technology-specific helper functions the agent
 
 ## `/wf`
 
-Contains documentation for Latch workflows the agent can invoke, including parameters and usage examples.
+Contains documentation for Latch workflows the agent can invoke. Each workflow document includes:
+
+- `<goal>` describes what the workflow accomplishes
+- `<parameters>` describes the workflow parameters and their expected values
+- `<outputs>` describes what the workflow returns
+- `<example>` provides example code for invoking the workflow
