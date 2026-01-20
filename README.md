@@ -2,21 +2,40 @@
 
 ## Repo Structure
 
-The agent reads from the following fields in `main.md`
+This repo is for the Latch Agent to work specifically with the Takara Seeker platform.
 
-- <pre_analysis_questions> any questions to ask *before* analysis if they are not obvious from context
-- <pre_analysis_step> step to run before starting plan to set up environment
-- <plan> the names of the steps and where to find step docs
-- <data_structure> the organization of data in the customer's workspace
-- <self_eval_criteria> specific, often numerical, pass/fail sanity checks after the agent has completed the entire plan
+Each Devkit has the following components:
+- `main.md`
+- `/lib`
+- `/wf`
+- `/steps`
 
-After completing pre-analysis, it begins with the plan
+## `main.md`
 
-Each step in the <plan> has its own document that is loaded before executing the step.
+The agent reads from the following fields in `main.md`:
 
-Description of step document tags:
-- <goal> describes the scientific goal of the step
-- <method> contains a description of the procedure to accomplish the goal
-- <workflows> contains the names of any Latch workflows the agent should invoke
-- <library> contains the names of any technology-specific library the agent should use
-- <self_eval_criteria> contains specific, often numerical, sanity checks to run through before determining the step is complete
+- `<pre_analysis_questions>` any questions to ask *before* analysis if they are not obvious from context
+- `<pre_analysis_step>` step to run before starting plan to set up environment
+- `<plan>` the names of the steps and where to find step docs
+- `<data_structure>` the organization of data in the customer's workspace
+- `<self_eval_criteria>` specific, often numerical, pass/fail sanity checks after the agent has completed the entire plan
+
+After completing pre-analysis, it begins with the plan.
+
+## `/lib`
+
+Contains Python library code with technology-specific helper functions the agent can import and use.
+
+## `/wf`
+
+Contains documentation for Latch workflows the agent can invoke, including parameters and usage examples.
+
+## `/steps`
+
+Each step in the `<plan>` has its own document that is loaded before executing the step.
+
+- `<goal>` describes the scientific goal of the step
+- `<method>` contains a description of the procedure to accomplish the goal
+- `<workflows>` contains the names of any Latch workflows the agent should invoke
+- `<library>` contains the names of any technology-specific library the agent should use
+- `<self_eval_criteria>` contains specific, often numerical, sanity checks to run through before determining the step is complete
