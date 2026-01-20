@@ -4,7 +4,6 @@
 - Does the H5AD have one or multiple samples?
 </pre_analysis_questions>
 
-# TODO: lets put this somewhere else...
 <pre_analysis_step>
 MANDATORY: Invoke the `redeem_package` tool to install required Takara tools into the workspace.
   - `package_code`: `3015c6c63ecc3f2cd410ea340a36af05777`
