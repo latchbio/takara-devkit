@@ -21,7 +21,6 @@ The agent reads from the following fields in `main.md`:
 - `<data_structure>` the organization of data in the customer's workspace
 - `<self_eval_criteria>` specific, often numerical, pass/fail sanity checks after the agent has completed the entire plan
 
-After completing pre-analysis, the agent begins with the plan.
 
 ## `/steps`
 
