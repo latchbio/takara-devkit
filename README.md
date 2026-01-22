@@ -48,4 +48,4 @@ Contains documentation for Latch workflows the agent can invoke. Each workflow d
 
 ## `requirements.txt`
 
-Optional file listing additional pip packages to install at pod startup. Dependencies are installed with `--no-deps` to avoid overriding existing packages in the base image.
+Optional file listing additional pip packages to install at pod startup. New packages can be added, but versions of packages already in the base image cannot be changed due to version constraints.
