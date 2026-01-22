@@ -9,6 +9,7 @@ Each Devkit has the following components:
 - `/steps`
 - `/lib`
 - `/wf`
+- `requirements.txt`
 
 ## `main.md`
 
@@ -44,3 +45,7 @@ Contains documentation for Latch workflows the agent can invoke. Each workflow d
 - `<parameters>` describes the workflow parameters and their expected values
 - `<outputs>` describes what the workflow returns
 - `<example>` provides example code for invoking the workflow
+
+## `requirements.txt`
+
+Optional file listing additional pip packages to install at pod startup. Dependencies are installed with `--no-deps` to avoid overriding existing packages in the base image.
