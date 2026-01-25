@@ -6,9 +6,9 @@ This repo is for the Latch Agent to work specifically with the Takara Seeker pla
 
 Each Devkit has the following components:
 - `main.md`
-- `/steps`
-- `/lib`
-- `/wf`
+- `steps/`
+- `lib/`
+- `wf/`
 - `requirements.txt`
 
 ## `main.md`
@@ -22,7 +22,7 @@ The agent reads from the following fields in `main.md`:
 - `<self_eval_criteria>` specific, often numerical, pass/fail sanity checks after the agent has completed the entire plan
 
 
-## `/steps`
+## `steps/`
 
 Each step in the `<plan>` has its own document that is loaded before executing the step.
 
@@ -32,11 +32,11 @@ Each step in the `<plan>` has its own document that is loaded before executing t
 - `<library>` contains the names of any technology-specific library the agent should use
 - `<self_eval_criteria>` contains specific, often numerical, sanity checks to run through before determining the step is complete
 
-## `/lib`
+## `lib/`
 
 Contains Python library code with technology-specific helper functions the agent can import and use.
 
-## `/wf`
+## `wf/`
 
 Contains documentation for Latch workflows the agent can invoke. Each workflow document includes:
 
