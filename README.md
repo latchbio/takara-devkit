@@ -49,7 +49,7 @@ Contains documentation for Latch workflows the agent can invoke. Each workflow d
 
 Optional file listing additional pip packages to install at pod startup. New packages can be added, but versions of packages already in [the base image requirements](https://gist.github.com/t-proctor/842bebd840eb342195e2261f706f36e9) cannot be changed due to version constraints.
 
-## How To Test
+## How to Test
 
 If your changes are on the `main` branch of your devkit, they will be pulled in automatically for new pods. However, if you want to test changes before merging to `main`, follow these steps:
 
